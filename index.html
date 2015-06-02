@@ -1,0 +1,27 @@
+<!DOCTYPE <!DOCTYPE html>
+<html ng-app="userProfiles">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body ng-controller="MainController as ctrl">
+
+
+<ul ng-repeat="item in ctrl.users" >
+	<div>
+		<img ng-src="{{item.avatar}}"/>
+		<div class="name"> Name: {{item.first_name}} {{item.last_name}}</div>
+	</div>
+</ul>
+
+
+
+
+
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="controller.js"></script>
+<script type="text/javascript" src="service.js"></script>
+</body>
+</html>
